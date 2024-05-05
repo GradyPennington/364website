@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-	<html>
-	<head>
-		<title>Employees</title>
+<html>
+<head>
+		<title>Flights</title>
 		<style>
 			.head {
 				border: 1px solid black;
@@ -53,54 +52,64 @@
 	</head>
 	<body>
 		<div class ="head">
-			<h1>Employees</h1>
+			<h1>Pilots</h1>
 		</div>
 		<div class ="links">
 			<p>Site Navigation</p> <br>
-			<a href="flights.html">|Flights|</a>
-			<a href="homepage.html">|Airport Homepage|<a/>
-			<a href="pilots.html">|Pilots|<a/>
+			<a href="homepage.html">|Airport Home Page|</a>
+			<a href="employees.html">|Employees|<a/>
+			<a href="flights.html">|Flights|<a/>
 		</div>
-		<div class="table">
-			<h1>Airport Employees</h1>
-			<table border="1">
+		</div>
+			<div class="table2">
+				<h1>Pilots</h1>
+				<table border="1">
 				<tr>
-					<th>Employee ID</th>
-					<th>Job Code</th>
+					<th>License Number</th>
+					<th>Airline</th>
+					<th>Seniorirty Number</th>
 				</tr>
 				<tr>
-					<td>105823</td>
-					<td>56000</td>
+					<td>12395637</td>
+					<td>United Airlines</td>
+					<td>295</td>
 				</tr>
 				<tr>
-					<td>335012</td>
-					<td>54000</td>
+					<td>02857146</td>
+					<td>American Airlines</td>
+					<td>60</td>
 				</tr>
 				<tr>
-					<td>000123</td>
-					<td>65000</td>
+					<td>03615591</td>
+					<td>Delta Airlines</td>
+					<td>50</td>
 				</tr>
 				<tr>
-					<td>345012</td>
-					<td>47000</td>
+					<td>10461728</td>
+					<td>Spirit Airlines</td>
+					<td>45</td>
 				</tr>
 				<tr>
-					<td>195732</td>
-					<td>84000</td>
+					<td>01928347</td>
+					<td>Southwest Airlines</td>
+					<td>350</td>
 				</tr>
 				
 			</table>
 			<h2>Insert Additional Data</h2>
 			<form>
-				<label for="id">Employee ID:</label><br>
-				<input type ="number" id="id" name="id"><br><br>
+				<label for="num">Pilot's License Number:</label><br>
+				<input type ="number" id="num" name="num"><br><br>
 				
-				<label for="salary">Job Code:</label><br>
+				<label for="airline">Airline Affiliation: </label><br>
+				<input type ="text" id="airline" name="airline"><br><br>
+				
+				<label for="salary">Seniority Number:</label><br>
 				<input type ="number" id="salary" name="salary"><br><br>
 				
 				<button type="submit">Submit Additional Data</button>
 				
 			</form>
 			</div>
-	</body>
-	</html>
+		</body>
+</html>
