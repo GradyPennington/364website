@@ -106,7 +106,7 @@ $result = $conn->query($sql);
 				
 				<button type="submit">Submit Flight to Delete</button>
 				
-			</form>t
+			</form>
 			
 			<h1>Update Flight Data (Use Registration Number as ID)</h1><br>
 			<form method="post" action="updateFlight.php">
