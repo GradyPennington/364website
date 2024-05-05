@@ -3,7 +3,7 @@ session_start(); // start (or resume) session
 
 // create database connection ($connection)
 $connection = new mysqli("localhost", "student", "CompSci364",
-                         "student");
+                         "authDB");
 
 $error = false;
 if (! isset($_SESSION["username"]) // already authenticated

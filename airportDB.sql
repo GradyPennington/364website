@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS airportDB;
+CREATE DATABASE airportDB;
+USE airportDB;
 CREATE TABLE airportEmployee(
 	Id INTEGER NOT NULL,
 	jobCode INTEGER NOT NULL,
@@ -47,4 +50,14 @@ CREATE TABLE Flights(
 	depTime INTEGER NOT NULL,
 	PRIMARY KEY(regNum)
 );
+INSERT INTO Flights(Airline, regNum, numPax, depTime)
+VALUES
+('American Airlines','N23451',102,1400),
+('Southwest Airlines','NL0192',130,1400),
+('Delta Airlines','NLJK45',45,1550),
+('Frontier Airlines','N25117',2,1555),
+('JetBlue Airlines', 'N8202F',145,1600),
+('United Airlines','N23DFD',245,1950),
+('Horizon Airways','N765GH',87,1545),
+('Spirit Airlines','NJHDGH',34,1100);
 

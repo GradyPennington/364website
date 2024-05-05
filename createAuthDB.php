@@ -1,12 +1,12 @@
 <?php
 
-$conn new mysqli("localhost", "student", "CompSci364", "student");
+$conn new mysqli("localhost", "student", "CompSci364", "authDB");
 
 if ($conn->connect_error) {
 	die("Connection Failed: " . $conn->connect_error);
 }
 
-$sql = "CREATE DATABASE IF NOT EXISTS student";
+$sql = "CREATE DATABASE IF NOT EXISTS authDB";
 if($conn->query($sql) == TRUE) {
 	echo "Database created success<br>";
 } else {
