@@ -61,3 +61,12 @@ VALUES
 ('Horizon Airways','N765GH',87,1545),
 ('Spirit Airlines','NJHDGH',34,1100);
 
+CREATE TABLE Users (
+	id INT PRIMARY KEY,
+	username VARCHAR(50) NOT NULL UNIQUE,
+	password_hash VARCHAR(255) NOT NULL
+	);
+INSERT INTO Users(id, username, password_hash)
+VALUES(1, 'student', '$2y$10$B0LiVjc.mxmQwaH1TYnWweg/jz6zCwfXUuFXLpC0XLAcIxoIVmk6y');
+
+
