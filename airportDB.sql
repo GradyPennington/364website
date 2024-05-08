@@ -8,20 +8,20 @@ CREATE TABLE airportEmployee(
 	);
 INSERT INTO airportEmployee(Id, jobCode)
 VALUES (738183, 192839),
-(102937,372819),
-(104581,182766),
-(520100,826100),
-(987356,321039),
-(209919,484819),
-(234765,987188),
-(384718,182718),
-(102333,334455),
-(474636,373677),
-(389191,197747),
-(467376,678455),
-(364747,947663),
-(567373,376888),
-(855755,888888);
+(102937,370),
+(104581,370),
+(520100,800),
+(987356,800),
+(209919,800),
+(234765,456),
+(384718,456),
+(102333,456),
+(474636,456),
+(389191,230),
+(467376,230),
+(364747,900),
+(567373,900),
+(855755,900);
 
 
 CREATE TABLE Pilots(
@@ -41,11 +41,16 @@ VALUES
 (67883345,'Spirit Airlines',1),
 (98761234,'United Airlines', 312),
 (80918347,'American Airlines',34),
-(93741204,'Horizon Airways',10);
+(93741204,'Horizon Airways',10),
+(10563728,'Alaska Airlines',4),
+(04618369,'Lufthansa',340),
+(94376838,'American Airlines',46),
+(04765867,'Southwest Airlines',32),
+(12096986,'Delta Airlines',6);
 	
 CREATE TABLE Flights(
 	Airline CHARACTER VARYING(30),
-	regNum CHARACTER VARYING(6),
+	regNum CHARACTER VARYING(10),
 	numPax INTEGER NOT NULL,
 	depTime INTEGER NOT NULL,
 	PRIMARY KEY(regNum)
@@ -59,7 +64,14 @@ VALUES
 ('JetBlue Airlines', 'N8202F',145,1600),
 ('United Airlines','N23DFD',245,1950),
 ('Horizon Airways','N765GH',87,1545),
-('Spirit Airlines','NJHDGH',34,1100);
+('Spirit Airlines','NJHDGH',34,1100),
+('MILAIR','Dagger5',3,1310),
+('RyanAir','NPL876',67,0550),
+('Lufthansa','NEDF65',340,0700),
+('Delta Airlines','NID812',65,2300),
+('United Airlines','NJDHGF',120,2230),
+('American Airlines','NHDGFY',30,0300),
+('Alaska Airlines','NALAKS',45,1555);
 
 CREATE TABLE Users (
 	id INT PRIMARY KEY,
